@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest_main.so -o ../lib/libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/mnt/e/dataset/2024-04-29-181006/LT/bag2csv/build/gtest/lib ../lib/libgtest.so -lpthread 
