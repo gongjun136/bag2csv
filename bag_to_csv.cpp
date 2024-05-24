@@ -50,11 +50,14 @@ void writePointCloudData(const std::string &topic, const sensor_msgs::PointCloud
         uint64_t timestamp_ns = static_cast<uint64_t>(*iter_timestamp * 1e9); // 将秒转换为纳秒
         uint64_t full_seconds = static_cast<uint64_t>(*iter_timestamp);       // 取整数秒部分
         uint64_t fractional_seconds = timestamp_ns % 1000000000;              // 取纳秒部分
+        // bug：纳秒部分可能会出现前导零丢失
+        std::ostringstream timestamp_ss;
+        timestamp_ss << full_seconds << "." << std::setw(9) << std::setfill('0') << fractional_seconds;
 
         // uint64_t combined_seconds = full_seconds * 1000000000 + fractional_seconds; // 组合整数秒和纳秒
 
         file << *iter_x << "," << *iter_y << "," << *iter_z << ",";
-        file << *iter_intensity << "," << full_seconds << "." << fractional_seconds << "," << *iter_ring << ",";
+        file << *iter_intensity << "," <<timestamp_ss.str() << "," << *iter_ring << ",";
         // unique_rings.insert(*iter_ring);
     }
     file << "\n";
