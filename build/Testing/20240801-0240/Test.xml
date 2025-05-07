@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240801-0240-Experimental"
+	Name="CH-ITZC-1190C"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="CH-ITZC-1190C"
+	OSRelease="5.15.153.1-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Fri Mar 29 23:14:13 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="167"
+	ProcessorCacheSize="16384"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="12287"
+	TotalPhysicalMemory="7794"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2496"
+	>
+	<Testing>
+		<StartDateTime>Aug 01 10:40 CST</StartDateTime>
+		<StartTestTime>1722480059</StartTestTime>
+		<TestList/>
+		<EndDateTime>Aug 01 10:40 CST</EndDateTime>
+		<EndTestTime>1722480059</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
